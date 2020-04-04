@@ -2,7 +2,7 @@
   "name": "{{ name }}",
   "version": "0.0.1",
   "description": "{{ description }}",
-  "main": "index.js",
+  "main": "{{ main }}",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "express": "^4.17.1",
@@ -15,7 +15,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "mock"
+    "{{ keywords }}"
   ],
   "author": "{{ author }}",
   "license": "ISC"
