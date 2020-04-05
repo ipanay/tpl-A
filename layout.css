@@ -1,7 +1,7 @@
 body{
     height:1049px;
     font-family: sans-serif;
-    background-image:url(../../image/lobster.jpg);
+    background-image:url(./lobster.jpg);
     background-size:cover;
 }
 /* 水平垂直自适应居中模态框表单 */
