@@ -1,22 +1,62 @@
 {
-  "name": "{{ name }}",
+  "name": "ipanmock",
   "version": "0.0.1",
-  "description": "{{ description }}",
-  "main": "{{ main }}",
+  "description": "这是第一个模版",
+  "main": "main.js",
   "dependencies": {
+    "art-template": "^4.13.2",
+    "body-parser": "^1.19.0",
     "bootstrap": "^4.4.1",
     "express": "^4.17.1",
+    "express-art-template": "^1.0.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@vue/cli": "^4.2.3"
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@vue/cli": "^4.3.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-loader": "^4.0.0",
+    "eslint-plugin-import": "^2.20.2",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.0.4",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "style-loader": "^1.1.3",
+    "url-loader": "^4.0.0",
+    "vue-loader": "^15.9.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack-dev-server"
   },
   "keywords": [
-    "{{ keywords }}"
+    "tplA"
   ],
-  "author": "{{ author }}",
-  "license": "ISC"
+  "author": "ipan",
+  "license": "ISC",
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base"
+  }
 }
