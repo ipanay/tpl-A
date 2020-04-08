@@ -13,6 +13,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
+process.env.VUE_APP_API_BASE_URL = '/api';
+
 // webpack五大核心：
 module.exports = {
   // 入口文件
@@ -138,5 +140,15 @@ module.exports = {
     compress: true, // zip压缩
     open: true,
     port: 3000,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:4000',
+        ws: false,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': '',
+        },
+      },
+    },
   },
 };
